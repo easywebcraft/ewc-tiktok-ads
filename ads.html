@@ -29,6 +29,8 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
 .num{font-family:var(--num); font-weight:900}
 .y{color:var(--accent)}
 .kicker{font-size:44px; font-weight:700; letter-spacing:.04em}
+.kicker.pill.tgt{border-color:var(--accent); background:rgba(255,198,26,.12); box-shadow:0 0 34px rgba(255,198,26,.25); font-weight:800}
+.kicker.tgt span{color:var(--accent)}
 .kicker.pill{border:3px solid rgba(255,255,255,.5); border-radius:999px; padding:10px 34px}
 .light .kicker.pill{border-color:var(--navy); color:var(--navy)}
 h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
@@ -65,6 +67,11 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 /* 開業前の状態 */
 .states{display:grid; grid-template-columns:1fr 1fr; gap:16px; width:820px}
 .states span{background:rgba(255,255,255,.1); border:2px solid rgba(255,255,255,.3); border-radius:18px; padding:22px 6px; font-size:31px; font-weight:800; white-space:nowrap}
+.scene.sm{gap:26px; width:700px}
+.scene.sm li{font-size:38px; padding:16px; white-space:nowrap}
+.scene.sm li + li::before{top:-33px; font-size:26px}
+.ba.sm .phone{width:250px}
+.ba.sm .chips{width:300px}
 /* 画像部品 */
 .mock{position:relative; width:760px; padding-right:150px}
 .mock .pc{border:14px solid #1b2437; border-bottom-width:24px; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 30px 60px rgba(0,0,0,.35)}
@@ -116,6 +123,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 .scene li{list-style:none; position:relative; background:rgba(255,255,255,.1); border:3px solid rgba(255,255,255,.3); border-radius:22px; padding:22px; font-size:44px; font-weight:800}
 .scene li + li::before{content:"↓"; position:absolute; top:-40px; left:50%; transform:translateX(-50%); color:var(--sub); font-size:30px; font-weight:400}
 .scene li.hp{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
+.scene li.q.ng{border-color:#f0937d; color:#ffd2c7}
 .scene li.q{background:transparent; border-style:dashed}
 
 .big0{font-family:var(--num); font-weight:900; font-size:330px; line-height:.9; color:var(--accent); text-shadow:0 20px 60px rgba(255,198,26,.35)}
@@ -129,7 +137,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 <!-- 1. LPのFVと同じメッセージ（第一候補） -->
 <section class="ad photo" id="a1"><div class="in">
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
-  <p class="kicker pill">開業前・開業したばかりの方へ</p>
+  <p class="kicker pill tgt"><span>開業前</span>・<span>開業したばかり</span>の方へ</p>
   <div class="gap-m"></div>
   <h1 class="h-l">ホームページの<br>デザイン案を<br><span class="y" style="font-size:112px">無料</span>で作ります</h1>
   <div class="gap-m"></div>
@@ -242,19 +250,18 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 <!-- 8. 名刺を渡したあと -->
 <section class="ad photo" id="a8"><div class="in">
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
-  <p class="kicker pill">開業後、こんな場面があります</p>
+  <p class="kicker pill">開業すると、こんなことが起こります</p>
   <div class="gap-l"></div>
-  <ol class="scene">
-    <li>名刺を渡す</li>
-    <li>店名・会社名を検索される</li>
-    <li class="q">「どんな事業なんだろう？」</li>
-    <li class="hp">ホームページ</li>
+  <ol class="scene sm">
+    <li>① 名刺を渡す</li>
+    <li>② Instagramを見てもらう</li>
+    <li>③ 店名・会社名を検索される</li>
+    <li class="q ng">④「公式サイトはないの？」</li>
+    <li class="hp">そこでホームページ</li>
   </ol>
   <div class="gap-l"></div>
-  <p class="sub">確かめられる場所があると、<br>はじめての相手も<span class="y">安心</span>です</p>
+  <p class="sub">事業内容を確認できる<br>ホームページがあると<span class="y">安心</span>です</p>
   <div class="sp"></div>
-  <p class="free">デザイン案まで<b>無料</b></p>
-  <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
 </div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
 
@@ -263,7 +270,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
   <h1 class="h-m">「SNSだけ」から<br><span class="y">「公式サイトがある」</span>へ</h1>
   <div class="gap-s"></div>
-  <div class="ba">
+  <div class="ba sm">
     <figure class="before"><div class="phone"><div class="sns">
       <div class="bar">instagram</div>
       <div class="prof"><span class="av"></span><div style="flex:1"><div class="ln"></div><div class="ln" style="width:60%"></div></div></div>
@@ -271,7 +278,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
       <div class="qs"><span>料金どこ？</span><span>営業時間は？</span></div>
     </div></div><figcaption>BEFORE</figcaption><div class="chips ng"><span>情報が埋もれる</span></div></figure>
     <span class="arr">→</span>
-    <figure class="after"><div class="phone"><img src="img/m-salon.webp" alt=""></div><figcaption class="y">AFTER</figcaption><div class="chips"><span>料金</span><span>営業時間</span><span>アクセス</span><span>予約</span></div></figure>
+    <figure class="after"><div class="phone"><img src="img/m-salon.webp" alt=""></div><figcaption class="y">AFTER</figcaption><div class="chips"><span>サービス</span><span>料金</span><span>営業時間</span><span>アクセス</span><span>お問い合わせ</span></div></figure>
   </div>
   <div class="sp" style="min-height:30px"></div>
   <p class="free">デザイン案まで<b>無料</b></p>
@@ -282,7 +289,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 <!-- 10. 1日約200円 -->
 <section class="ad photo" id="a10"><div class="in">
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
-  <p class="kicker pill">開業前・開業したばかりの方へ</p>
+  <p class="kicker pill tgt"><span>開業前</span>・<span>開業したばかり</span>の方へ</p>
   <div class="gap-l"></div>
   <p class="sub" style="font-size:56px">ホームページが</p>
   <p class="day">1日約<span class="num">200</span>円から</p>
