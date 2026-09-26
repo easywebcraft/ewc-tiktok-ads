@@ -55,15 +55,15 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 .brand{margin-bottom:34px}
 .brand img{height:36px; width:auto; display:block}
 .light .brand{background:var(--deep); padding:12px 22px; border-radius:12px}
-.fine{position:absolute; left:70px; right:140px; top:1452px; font-size:22px; line-height:1.5; color:rgba(255,255,255,.72); text-align:center}
-.light .fine{color:var(--muted)}
+.fine{position:absolute; left:40px; right:40px; top:1448px; font-size:30px; font-weight:700; line-height:1.4; color:rgba(255,255,255,.9); text-align:center}
+.light .fine{color:var(--ink)}
 /* 名刺 */
-.card{width:720px; background:#fff; color:var(--ink); border-radius:18px; padding:40px 48px; text-align:left; box-shadow:0 24px 50px rgba(0,0,0,.35)}
-.card .c-co{font-size:30px; font-weight:700; color:var(--muted)}
-.card .c-name{font-size:52px; font-weight:800; color:var(--navy); margin:6px 0 20px}
-.card .c-line{font-size:28px; color:var(--ink); margin-top:4px}
-.card .c-url{font-size:28px; margin-top:12px; font-weight:700}
-.card .c-url span{display:inline-block; border:3px dashed var(--ng); color:var(--ng); border-radius:10px; padding:2px 14px}
+.card{width:860px; background:#fff; color:var(--ink); border-radius:18px; padding:40px 48px; text-align:left; box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.card .c-co{font-size:34px; font-weight:700; color:var(--muted)}
+.card .c-name{font-size:62px; font-weight:800; color:var(--navy); margin:6px 0 20px}
+.card .c-line{font-size:34px; color:var(--ink); margin-top:4px}
+.card .c-url{font-size:40px; margin-top:18px; font-weight:800; background:#fff3f0; border-radius:12px; padding:12px 16px}
+.card .c-url span{display:inline-block; border:4px dashed var(--ng); color:var(--ng); border-radius:10px; padding:4px 18px; font-size:40px}
 /* 開業前の状態 */
 .states{display:grid; grid-template-columns:1fr 1fr; gap:16px; width:820px}
 .states span{background:rgba(255,255,255,.1); border:2px solid rgba(255,255,255,.3); border-radius:18px; padding:22px 6px; font-size:31px; font-weight:800; white-space:nowrap}
@@ -75,10 +75,10 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 /* TYPE B：白背景 */
 .ad.white{background:#fff; color:var(--ink)}
 .ad.white .brand{background:var(--deep); padding:12px 22px; border-radius:12px}
-.ad.white .fine{color:var(--muted)}
+.ad.white .fine{color:var(--ink)}
 .w-tag{display:inline-block; background:var(--navy); color:#fff; font-size:40px; font-weight:800; border-radius:999px; padding:10px 36px}
 .ad.white h1{color:var(--ink)}
-.mkr{background:linear-gradient(transparent 58%, #ffe45c 58%); padding:0 6px}
+.mkr{color:var(--navy); background:linear-gradient(transparent 72%, #ffd400 72%); padding:0 6px}
 .w-row{display:flex; align-items:center; gap:26px; width:870px}
 .phone.big{flex:0 0 270px; width:270px; border-color:#1b2437}
 .w-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:18px; text-align:left}
@@ -90,6 +90,15 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
 .w-price span{color:#c3ccd8; margin:0 10px; font-weight:400}
 .w-free{display:inline-block; background:var(--navy); color:#fff; font-size:38px; font-weight:800; border-radius:18px; padding:16px 30px; white-space:nowrap}
 .w-free b{color:var(--accent); font-size:48px}
+.price.big{font-size:56px; line-height:1}
+.price.big .num{font-size:150px}
+.price.mid{font-size:44px; margin-top:6px}
+.price.mid .num{font-size:90px}
+.bubbles.lg{gap:30px; width:860px}
+.bubbles.lg div{font-size:54px; padding:28px 46px}
+.flow.lg{width:800px; gap:46px}
+.flow.lg li{font-size:56px; padding:32px 52px}
+.flow.lg li b{font-size:70px}
 /* 画像部品 */
 .mock{position:relative; width:760px; padding-right:150px}
 .mock .pc{border:14px solid #1b2437; border-bottom-width:24px; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 30px 60px rgba(0,0,0,.35)}
@@ -159,12 +168,13 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <div class="gap-m"></div>
   <h1 class="h-l">ホームページの<br>デザイン案を<br><span class="y" style="font-size:112px">無料</span>で作ります</h1>
   <div class="gap-m"></div>
-  <div class="mock"><div class="pc"><img src="img/dining.webp" alt=""></div><div class="phone"><img src="img/m-dining.webp" alt=""></div></div>
+  <div class="mock" style="width:620px; padding-right:120px"><div class="pc"><img src="img/dining.webp" alt=""></div><div class="phone" style="width:170px"><img src="img/m-dining.webp" alt=""></div></div>
   <div class="sp"></div>
-  <p class="price">初期費用<span class="num">0</span>円｜月額<span class="num" style="font-size:66px">5,980</span>円～</p>
+  <p class="price big">初期費用<span class="num">0</span>円</p>
+  <p class="price mid">月額<span class="num">5,980</span>円～</p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 2. いきなり契約しなくてOK -->
 <section class="ad" id="a2"><div class="in">
@@ -173,7 +183,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <div class="gap-s"></div>
   <h1 class="h-m">まず、あなたのHPを<br><span class="y">見てから決めてください</span></h1>
   <div class="gap-l"></div>
-  <ol class="flow">
+  <ol class="flow lg">
     <li>相談<b>0<small>円</small></b></li>
     <li>ヒアリング<b>0<small>円</small></b></li>
     <li>デザイン案<b>0<small>円</small></b></li>
@@ -181,7 +191,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   </ol>
   <div class="sp"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 3. HP、開業前に用意しませんか？ -->
 <section class="ad photo" id="a3"><div class="in">
@@ -199,7 +209,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 4. 初期費用0円 -->
 <section class="ad" id="a4"><div class="in">
@@ -216,7 +226,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 5. 何を載せればいいかわからない方へ -->
 <section class="ad light" id="a5"><div class="in">
@@ -232,38 +242,38 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="answer">お話をうかがって、<br>載せる内容をこちらで整理します</p>
   <div class="sp"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 6. 文章・写真がなくてもOK -->
 <section class="ad" id="a6"><div class="in">
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
   <p class="kicker">HPを作りたいけど……</p>
   <div class="gap-m"></div>
-  <div class="bubbles"><div>文章が書けない</div><div>写真がまだない</div><div>屋号も決まっていない</div></div>
+  <div class="bubbles lg"><div>文章が書けない</div><div>写真がまだない</div><div>屋号も決まっていない</div></div>
   <div class="gap-l"></div>
   <h1 class="h-l">それでも<br><span class="y">大丈夫です</span></h1>
   <div class="gap-m"></div>
   <p class="sub">話を聞いて、<br>こちらで文章の下書きを作ります</p>
   <div class="sp"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 7. Instagramだけで大丈夫？ -->
 <section class="ad" id="a7"><div class="in">
   <p class="brand"><img src="img/logo-mark.webp" alt="EasyWebCraft"></p>
   <h1 class="h-l">Instagramだけで<br><span class="y">大丈夫？</span></h1>
   <div class="gap-m"></div>
-  <div class="ba"><figure class="before"><div class="phone" style="width:330px"><div class="sns">
+  <div class="ba"><figure class="before"><div class="phone" style="width:380px"><div class="sns">
     <div class="bar">instagram</div>
     <div class="prof"><span class="av"></span><div style="flex:1"><div class="ln"></div><div class="ln" style="width:60%"></div></div></div>
     <div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <div class="qs"><span>どんな店？</span><span>料金どこ？</span><span>営業時間は？</span></div>
   </div></div></figure></div>
-  <div class="gap-m"></div>
+  <div class="gap-s"></div>
   <p class="sub">料金・営業時間・場所が<br><span class="y">ひと目で分かる場所</span>を、開業時から</p>
   <div class="sp"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 8. 名刺を渡したあと -->
 <section class="ad photo" id="a8"><div class="in">
@@ -281,7 +291,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="sub">事業内容を確認できる<br>ホームページがあると<span class="y">安心</span>です</p>
   <div class="sp"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 9. BEFORE → AFTER -->
 <section class="ad" id="a9"><div class="in">
@@ -302,7 +312,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 10. 1日約200円 -->
 <section class="ad photo" id="a10"><div class="in">
@@ -319,7 +329,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="price" style="font-size:40px">初期費用<span class="num" style="font-size:70px">0</span>円｜月額<span class="num" style="font-size:56px">5,980</span>円～</p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※1日約200円＝月額5,980円（税別）÷30日の目安。最低契約期間6ヶ月。デザイン案はトップページ1ページ分を無料で作成。</p></section>
+</div><p class="fine">※月額5,980円（税別）÷30日の目安／最低契約期間6ヶ月</p></section>
 
 <!-- 11（B）開業直後：開業したけどHPまだない？ -->
 <section class="ad" id="a11"><div class="in">
@@ -335,7 +345,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 12（C）開業1〜3ヶ月：そろそろHPを作りませんか？ -->
 <section class="ad photo" id="a12"><div class="in">
@@ -350,7 +360,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 13（E）名刺作成済み：名刺に載せるHPありますか？ -->
 <section class="ad" id="a13"><div class="in">
@@ -370,7 +380,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="sub">名刺のURLから、<br>事業の中身まで<span class="y">伝わるように</span></p>
   <div class="sp" style="min-height:30px"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 14（J）開業準備中：開業前から相談OK -->
 <section class="ad photo" id="a14"><div class="in">
@@ -386,7 +396,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <!-- 15（B・白背景）TYPE B：開業したけどHPまだ作ってない？ -->
 <section class="ad white" id="a15"><div class="in">
@@ -409,7 +419,7 @@ h1{font-weight:900; line-height:1.28; letter-spacing:.01em}
   <p class="w-free">トップページのデザイン案まで<b>無料</b></p>
   <div class="gap-s"></div>
   <p class="cta">無料でデザイン案を見る</p>
-</div><p class="fine">※価格は税別・最低契約期間6ヶ月。無料で作るのはトップページ1ページ分のデザイン案です。</p></section>
+</div><p class="fine">※税別・最低契約期間6ヶ月／無料はトップページ1ページ分</p></section>
 
 <script>
 // 画面幅が1080pxより狭いときは、全体を縮小して見られるようにする（書き出し時は1080pxで開くので影響なし）
