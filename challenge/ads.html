@@ -110,6 +110,14 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
 #c2 .samples img{height:160px}
 #c2 .offer .p b{font-size:160px}
 #c2 .blogo{margin-bottom:18px}
+
+.todo{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; width:100%}
+.todo span{padding:16px 0; border:2px solid rgba(255,255,255,.35); border-radius:14px; background:rgba(0,0,0,.55); font-weight:900; font-size:42px; position:relative}
+.todo span::after{content:""; position:absolute; left:18%; right:18%; top:50%; height:4px; background:#ff5a5f; transform:rotate(-8deg); opacity:.0}
+#c2 .q{font-size:60px; padding:24px 30px}
+#c2 .offer .p b{font-size:170px}
+#c1 .in{top:500px}
+#c3 .offer{padding:14px 34px} #c3 .offer .p b{font-size:140px} #c3 .serif.gold{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -118,20 +126,19 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
 <section class="ad face" id="c1">
   <div class="photo up"></div>
   <div class="in">
-    <p class="label">起業・開業したばかりの<br><b>経営者様へ</b></p>
+    <p class="label">起業したばかりの<br><b>経営者様へ</b></p>
     <div class="g20"></div>
-    <p class="serif outline hpline">ホームページ制作が</p>
-    <p class="zero outline" style="font-size:48px">初期費用<span class="n gold" style="font-size:88px">0</span>円</p>
-    <p class="price outline" style="font-size:52px">月額<span class="n gold" style="font-size:160px">5,980</span>円〜</p>
-    <div class="g10"></div>
-    <p class="cancel outline" style="font-size:42px">7ヶ月目から<em>いつでも解約OK</em></p>
+    <p class="serif outline hpline">ホームページ制作</p>
     <div class="g20"></div>
-    <p class="svc outline">月額制ホームページ制作サービス</p>
-    <img class="logo logo-s" src="img/logo-fv.webp" alt="EasyWebCraft">
+    <p class="zero outline" style="font-size:52px">初期費用<span class="n gold" style="font-size:96px">0</span>円</p>
+    <p class="price outline" style="font-size:52px">月額<span class="n gold" style="font-size:170px">5,980</span>円〜</p>
     <div class="g30"></div>
+    <p class="serif outline" style="font-size:50px; line-height:1.4">しかも、契約前に<br><span class="gold" style="font-size:1.2em">デザインを確認できます</span></p>
+    <div class="sp"></div>
+    <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">※税別（税込6,578円〜）・最低契約期間6ヶ月<br>7ヶ月目以降はいつでも解約できます</p>
+  <p class="fine">※税別（税込6,578円〜）・最低契約期間6ヶ月<br>無料のデザイン案はトップページ1ページ分です</p>
 </section>
 
 <!-- C2 安すぎて不安 → 契約前にデザイン案0円 -->
@@ -139,36 +146,41 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
   <div class="in">
     <p class="q"><span class="d">でも……</span>こんなに安くて本当に<br><b>ちゃんとしたHP</b>が<br>できるの？</p>
     <div class="g20"></div>
+    <p class="sub outline" style="font-size:44px">「安すぎて不安…」<br>そう思うのは当然です。</p>
+    <div class="g20"></div>
     <div class="arrow"></div>
     <div class="g20"></div>
-    <p class="serif gold" style="font-size:66px; line-height:1.35">契約する前に、<br>実際のデザインを作ります</p>
-    <div class="g20"></div>
+    <p class="serif gold" style="font-size:62px; line-height:1.35">だから、契約する前に<br>実際のデザインを作ります</p>
+    <div class="g30"></div>
     <div class="offer"><p class="h">あなたの事業専用<br>HPデザイン案</p><p class="p"><b class="gold">0</b>円</p></div>
     <div class="g20"></div>
-    <div class="samples"><img src="img/s-izakaya.webp" alt=""><img src="img/s-salon.webp" alt=""><img src="img/s-gym.webp" alt=""></div>
+    <p class="serif outline" style="font-size:48px">実物を見てから決めてください</p>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">※無料はトップページ1ページ分のデザイン案です。画像はサンプル<br>ご契約後は月額5,980円〜（税別）・最低契約期間6ヶ月</p>
+  <p class="fine">※無料はトップページ1ページ分のデザイン案です<br>ご契約後は月額5,980円〜（税別）・最低契約期間6ヶ月</p>
 </section>
 
 <!-- C3 検索されても出てこない → 他社へ -->
-<section class="ad face" id="c3">
-  <div class="photo think"></div>
+<section class="ad" id="c3">
   <div class="in">
-    <p class="serif outline" style="font-size:66px; line-height:1.4">あなたの会社名、検索したら<br><span class="red">何が出てきますか？</span></p>
-    <div class="g40"></div>
-    <div class="chain">
-      <div class="c1">ホームページが<span class="red">見つからない</span></div>
-      <div class="c2">「本当にここで大丈夫？」</div>
-      <div class="c3">そのまま他社へ……</div>
-    </div>
+    <p class="serif outline" style="font-size:58px; line-height:1.4">起業した。<br>ホームページも必要。</p>
+    <div class="g20"></div>
+    <p class="serif red outline" style="font-size:76px; line-height:1.25">でも、どこに<br>頼めばいい？</p>
+    <div class="g20"></div>
+    <div class="chips"><span>制作会社？</span><span>フリーランス？</span><span>自分で作る？</span></div>
+    <div class="g20"></div>
+    <div class="arrow"></div>
+    <div class="g20"></div>
+    <p class="serif gold" style="font-size:54px; line-height:1.35">迷っているなら、<br>まずデザインを見て決めてください</p>
+    <div class="g20"></div>
+    <div class="offer"><p class="h">あなたの事業専用<br>HPデザイン案</p><p class="p"><b class="gold">0</b>円</p></div>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">初期費用0円・月額5,980円〜（税別）・最低契約期間6ヶ月<br>相談・トップページのデザイン案までは無料です</p>
+  <p class="fine">初期費用0円・月額5,980円〜（税別）・最低契約期間6ヶ月<br>無料のデザイン案はトップページ1ページ分です</p>
 </section>
 
 <!-- C4 事業は決まった、HPは何から？ -->
@@ -178,9 +190,9 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
     <p class="serif outline" style="font-size:64px; line-height:1.4">事業は決まった。<br>でも、ホームページは</p>
     <p class="serif gold" style="font-size:76px; line-height:1.3; white-space:nowrap">何から始めればいい？</p>
     <div class="g30"></div>
-    <div class="chips"><span>「何を載せる？」</span><span>「何ページ必要？」</span><span>「文章は？」</span><span>「デザインは？」</span></div>
+    <div class="chips"><span>「何を載せる？」</span><span>「文章は？」</span><span>「写真は？」</span><span>「制作会社は？」</span></div>
     <div class="g30"></div>
-    <p class="sub outline">何も決まっていなくても、<br><em>相談するところから</em>始められます</p>
+    <p class="serif outline" style="font-size:52px; line-height:1.45">何も決まってなくてOK。<br><span class="gold">考えるところから<br>お任せください</span></p>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
@@ -189,39 +201,38 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
 </section>
 
 <!-- C5 本業が忙しくて手が回らない -->
-<section class="ad face" id="c5">
-  <div class="photo think"></div>
+<section class="ad" id="c5">
   <div class="in">
-    <p class="serif outline" style="font-size:60px; line-height:1.4">本業が忙しくて<br>ホームページまで<br><span class="red" style="font-size:1.2em">手が回らない…</span></p>
-    <div class="g20"></div>
+    <p class="serif outline" style="font-size:66px; line-height:1.4">起業したばかり。</p>
+    <div class="g30"></div>
+    <div class="todo"><span>営業</span><span>集客</span><span>経理</span><span>採用</span><span>仕入れ</span><span>届出</span></div>
+    <div class="g30"></div>
+    <p class="serif outline" style="font-size:60px; line-height:1.4">やることだらけで<br><span class="red" style="font-size:1.2em">HPまで手が回らない</span></p>
+    <div class="g30"></div>
     <div class="arrow"></div>
-    <div class="g20"></div>
-    <p class="serif gold" style="font-size:66px">本業に集中したままでOK</p>
-    <div class="g20"></div>
-    <div class="checks two">
-      <div>文章づくり</div><div>ページ構成</div><div>デザイン</div><div>更新・保守</div>
-    </div>
-    <div class="g20"></div>
-    <p class="sub outline" style="font-size:42px"><em>まとめてお任せください</em></p>
+    <div class="g30"></div>
+    <p class="serif gold" style="font-size:58px; line-height:1.4">文章・構成・デザインまで<br>まとめてお任せください</p>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">初期費用0円・月額5,980円〜（税別）・最低契約期間6ヶ月<br>更新の範囲はプランにより異なります</p>
+  <p class="fine">初期費用0円・月額5,980円〜（税別）・最低契約期間6ヶ月<br>相談・トップページのデザイン案までは無料です</p>
 </section>
 
 <!-- C6 高い・縛り・難しい → 3つの安心 -->
 <section class="ad" id="c6">
   <div class="in">
-    <p class="serif outline" style="font-size:64px; line-height:1.45">ホームページって<br><span class="red">高い・縛りが長い・難しい</span><br>と思っていませんか？</p>
-    <div class="g60"></div>
+    <p class="serif outline" style="font-size:62px; line-height:1.45">起業したばかりだから、<br><span class="red">HPに大金はかけられない</span></p>
+    <div class="g40"></div>
+    <div class="arrow"></div>
+    <div class="g40"></div>
     <div class="three">
       <div><p class="k">初期費用</p><p class="v"><b class="gold">0</b>円</p></div>
-      <div><p class="k">契約前の<br>デザイン案</p><p class="v"><b class="gold">0</b>円</p></div>
-      <div><p class="k">7ヶ月目から</p><p class="v t">いつでも解約OK</p></div>
+      <div><p class="k">デザイン案</p><p class="v"><b class="gold">0</b>円</p></div>
+      <div><p class="k">月額</p><p class="v"><b class="gold" style="font-size:96px">5,980</b>円〜</p></div>
     </div>
     <div class="g30"></div>
-    <p class="price outline" style="font-size:48px">月額<span class="n gold" style="font-size:140px">5,980</span>円〜</p>
+    <p class="cancel outline" style="font-size:44px">7ヶ月目から<em>いつでも解約OK</em></p>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
