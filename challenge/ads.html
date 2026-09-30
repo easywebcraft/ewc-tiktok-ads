@@ -135,6 +135,47 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
 .ad.fvimg::before{background:url('img/ch-sp.webp') center 150px/1080px auto no-repeat,#050505; opacity:1}
 .ad.fvimg::after{background:linear-gradient(180deg,#050505 0%,#050505 7%,rgba(5,5,5,0) 13%,rgba(5,5,5,0) 50%,rgba(5,5,5,.6) 60%,rgba(5,5,5,.85) 75%,#050505 100%)}
 #c1 .in{top:40px}
+
+/* ===== TikTokの画面に合わせた安全範囲（2026-09-30） =====
+   上：タブ（約y150まで）／右：アイコン列（x860より右・y880〜1560）／下：広告文と「詳しくはこちら」（y1560より下）
+   を避ける。中身は x80〜850・y240〜1450、注記は y1460〜1540 に収める。画像内の赤いボタンはTikTokのボタンと二重になるので出さない */
+.in{left:80px !important; right:230px !important; top:240px; bottom:470px !important}
+.cta{display:none !important}
+.blogo{margin-bottom:0 !important}
+.fine{top:auto !important; bottom:380px !important; left:80px !important; right:230px !important; font-size:30px !important; line-height:1.4 !important; color:#fff !important; text-shadow:0 2px 6px #000,0 0 3px #000}
+.face .in{top:600px !important}
+#c5 .in{top:700px !important}
+#c1 .in{top:240px !important}
+.ad.fvimg::before{background:url('img/ch-sp.webp') 36% 330px/1180px auto no-repeat,#050505 !important}
+.ad.fvimg::after{background:linear-gradient(180deg,#050505 0%,#050505 15%,rgba(5,5,5,0) 20%,rgba(5,5,5,0) 55%,rgba(5,5,5,.6) 64%,rgba(5,5,5,.9) 78%,#050505 100%) !important}
+
+.fine{font-size:27px !important}
+.ad.fvimg::before{background:url('img/ch-sp.webp') center 320px/980px auto no-repeat,#050505 !important}
+#c1 .in > div[style*="height:900px"]{height:760px !important}
+#c3 .serif.red{font-size:66px !important}
+#c4 .in p.serif.outline:last-of-type{font-size:60px !important}
+#c2b .zero{font-size:42px !important} #c2b .zero .n{font-size:74px !important}
+#c2b .price .n{font-size:140px !important}
+#c2b .q{font-size:56px !important; padding:8px 30px !important}
+#c2b .serif.gold{font-size:56px !important}
+#c2b .offer .p b{font-size:120px !important}
+#c2b .blogo{margin-top:10px !important}
+
+/* 右のアイコン列をもう少し避ける（表示イメージで確認 2026-09-30） */
+.in{left:90px !important; right:270px !important}
+.fine{left:90px !important; right:270px !important}
+#c4 .serif.gold{font-size:68px !important}
+#c5 .serif.gold{font-size:60px !important}
+#c5 .serif.outline{font-size:58px !important}
+#c3 .serif.red{font-size:58px !important}
+#c3 .chips span{font-size:32px !important; padding:8px 16px !important}
+#c3 .serif.gold{font-size:66px !important}
+#c2 .serif.gold{font-size:58px !important}
+#c2 .q{font-size:62px !important}
+#c6 .serif.outline{font-size:60px !important}
+#c1 .price .n{font-size:150px !important}
+#c1 .fine,#c2b .fine{font-size:24px !important}
+#c2b .in{bottom:500px !important}
 </style>
 </head>
 <body>
@@ -191,7 +232,7 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">※制作費は月額料金に含まれます。税別・最低契約期間6ヶ月<br>無料のデザイン案はトップページ1ページ分</p>
+  <p class="fine">※制作費は月額料金に含みます。税別・最低契約期間6ヶ月<br>無料のデザイン案はトップページ1ページ分</p>
 </section>
 
 <!-- C3 検索されても出てこない → 他社へ -->
@@ -223,7 +264,7 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
     <div class="g40"></div>
     <div class="arrow"></div>
     <div class="g40"></div>
-    <p class="serif outline" style="font-size:72px; line-height:1.35">何も決まってなくて<span class="gold" style="font-size:1.3em">OK</span></p>
+    <p class="serif outline" style="font-size:56px; line-height:1.35">何も決まってなくて<span class="gold" style="font-size:1.3em">OK</span></p>
     <div class="sp"></div>
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
@@ -262,7 +303,7 @@ body{width:1080px; font-family:"Noto Sans JP",sans-serif; color:#fff; background
     <img class="logo blogo" src="img/logo-fv.webp" alt="EasyWebCraft">
     <p class="cta">無料でデザイン案を見てみる</p>
   </div>
-  <p class="fine">※税別・最低契約期間6ヶ月／デザイン案はトップページ1ページ分</p>
+  <p class="fine">※税別・最低契約期間6ヶ月<br>デザイン案はトップページ1ページ分</p>
 </section>
 
 </body>
